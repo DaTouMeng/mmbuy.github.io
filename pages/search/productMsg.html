@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../css/search/common.css">
+    <link rel="stylesheet" href="../../css/search/productMsg.css">
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <a class="logo" href="javascript:void(0);">
+        <h1>慢慢买 -- 最专业的比价平台</h1>
+    </a>
+    <a class="download" href="javascript:void(0);">
+    </a>
+</div>
+<!--搜索框 -->
+<div class="search">
+    <form action="" class="type">
+        <input type="search" placeholder="请输入你想比价的商品"/>
+        <button class="toSearch">搜索</button>
+    </form>
+</div>
+<div class="msg_container">
+    <!--动态渲染-->
+</div>
+<div class="price_msg">
+    * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+</div>
+<div class="comments_head">
+    <h1>优选网友评价</h1>
+</div>
+<div class="comments_text">
+    <!--动态渲染评论列表-->
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footTop">
+        <a href="javascript:void(0);" class="one login">登录</a>
+        <a href="javascript:void(0);" class="one register">注册</a>
+        <a href="#" class="toTop"><span></span> 返回顶部
+        </a>
+    </div>
+    <div class="footBottom">
+        <a href="javascript:void(0);" class="appDown">手机app下载</a>
+        <a href="javascript:void(0);" class="mobile">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.com</p>
+    </div>
+</div>
+<script type="text/template" id="product_msg">
+    {{each result as value index}}
+    <nav>
+        <ul>
+            <li><a href="../../index.html">首页</a><b class="glyphicon glyphicon-menu-right"></b></li>
+            <li><a href="search.html">全部分类</a><b class="glyphicon glyphicon-menu-right"></b></li>
+            <li><a href="productList.html?categoryid={{value.categoryId}}&category={{category}}">{{category}}</a><b class="glyphicon glyphicon-menu-right"></b></li>
+            <li><span>{{value.productName.substring(0,10).replace("(","").replace(")","").replace(" ","")}}</span></li>
+            <a href="javascript:void(0);">筛选</a>
+        </ul>
+    </nav>
+    {{/each}}
+    {{each result as value index}}
+    <div class="msg_box">
+        <h1 class="msg_title">{{value.productName}}</h1>
+        <div class="msg_pic">
+            <!--<img src="../../upload/search/pic.jpg" alt="">-->
+            {{#value.productImg}}
+            <div class="cle_product">收藏</div>
+        </div>
+    </div>
+    <div class="btn_list">
+        <a href="javascript:void(0);" class="col-xs-4">比较购价</a>
+        <a href="javascript:void(0);" class="col-xs-4">产品参数</a>
+        <a href="javascript:void(0);" class="col-xs-4">优选评价</a>
+    </div>
+    <div class="store_list">
+        {{#value.bjShop}}
+    </div>
+    {{/each}}
+</script>
+<script type="text/template" id="comments">
+    {{each result as value index}}
+    <div class="comments_box">
+        <div class="comments_msg clearfix">
+            <span class="username">{{value.comName}}</span>
+            <span class="date">{{value.comTime}}</span>
+        </div>
+        <div class="buy_from"><span>{{value.comFrom}}</span></div>
+        <div class="text">
+            <p>{{value.comContent}}</p>
+        </div>
+    </div>
+    {{/each}}
+    <div class="more_conments">查看更多评价</div>
+</script>
+<script src="../../public/assets/jquery/jquery.js"></script>
+<script>jQuery.noConflict()</script>
+<script src="../../public/assets/zepto/zepto.js"></script>
+<script src="../../public/assets/artTemplate/template.js"></script>
+<script src="../../public/assets/bootstrap/js/bootstrap.js"></script>
+<script src="../../js/search/productMsg.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<ul id="shopListTmp">
+    <li>
+       {{v.productCoupon}}
+            <div class="pic">
+                {{v.productImg}}
+            </div>
+            <div class="info">
+                {{ v.productName }}
+                <div class="i">
+                    <i>券后</i>
+                 {{ v.productPrice }}
+                </div>
+                <div class="o">
+                    <div class="t">
+                        <div class="y">{{ v.productCoupon }}</div>
+                        <div class="g">{{v.productHref}}</div>
+                    </div>
+                    <div class="d"> {{v.productCouponRemain }}</div>
+                </div>
+            </div>
+
+    </li>
+</ul>
+
+
+<script type="text/html" id="getbaicaijiaproductTmp">
+    {{ each result as v i }}
+    <div role="tabpanel" class="tab-pane hspane" id="{{'_'+v._id}}">
+        <ul id="shopListTmp">
+            <li>
+
+
+                <i>券后</i>
+
+
+
+            </li>
+        </ul>
+    </div>
+    {{ /each }}
+</script>
+
+
+{{ each result as v i }}
+<li>
+    {{#v.productImg}}
+    {{#v.productName }}
+    <i>券后</i>
+    {{#v.productPrice }}
+    {{#v.productCoupon }}
+    {{#v.productHref}}
+    {{#v.productCouponRemain }}
+</li>
+{{ /each }}

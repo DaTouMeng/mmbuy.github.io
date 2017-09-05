@@ -1,0 +1,135 @@
+.navbar{
+    margin-bottom: 0;
+    border:none;
+    min-height: 44px;
+}
+.navbar-header{
+    height:44px;
+    font-size: 20px;
+    line-height: 44px;
+    background-color: #ff841d;
+    color:#fff;
+}
+.pull-left{
+    line-height:44px;
+    margin-left:10px;
+    color:#fff;
+}
+.center-block{
+    width:100%;
+    text-align: center;
+}
+.tab{
+    height:37px;
+    /*border-bottom: 1px solid #fff;*/
+}
+.nav-tabs{
+    /*float: left;*/
+    /*border-bottom:#fff;*/
+    height:37px;
+    width:100%;
+    position: relative;
+}
+.nav-tabs li{
+    list-style: none;
+    /*float: left;*/
+    width:33%;
+    height:37px;
+    line-height:37px;
+    text-align: center;
+}
+.nav-tabs li:last-of-type{
+    /*width:5%;*/
+    /*padding-left: 30px;*/
+}
+.nav-tabs li a{
+    height: 37px;
+    display: block;
+    font-size: 16px;
+    color: #444;
+    background: transparent;
+    margin-right: 0;
+    border: none;
+    /*overflow: hidden;*/
+    /*transition: all 0.5s ease 0s;*/
+}
+.nav-tabs >li.active> a,
+.nav-tabs >li.active>a:hover,
+.nav-tabs >li.active>a:focus {
+    border: 1px solid #ff841d;
+    border-radius: 0;
+    /*background-color: #ffad24;*/
+}
+.search{
+    float: right;
+    /*height:36px;*/
+    /*width:10%;*/
+    /*line-height: 36px;*/
+    /*font-size: 20px;*/
+    /*text-align: center;*/
+    /*border-bottom: 1px solid #ddd;*/
+    /*border-left: 1px solid #ddd;*/
+    /*box-sizing: border-box;*/
+}
+.list-group{
+    display: none;
+    /*position:absolute;*/
+    width:100%;
+}
+.list-group-item:focus{
+    background-color: transparent;
+}
+.pro_list{
+    background-color: #f5f5f5;
+    padding: 6px 0;
+    overflow: scroll;
+    height: 100%;
+}
+.pro_list .item{
+    float:left;
+    width:50%;
+    box-sizing: border-box;
+    padding: 4px;
+    background-color: #f5f5f5;
+}
+.pro_list a{
+    background-color: #fff;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 4px;
+}
+.pic{
+    width:98%;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    margin: 4px;
+}
+.pic > img{
+    width:180px;
+    height:180px;
+    /*max-height:100%;*/
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.pro_list .title{
+    overflow: hidden;
+    padding: 0 6px;
+    height:14px;
+    line-height: 14px;
+    margin-bottom: 6px;
+}
+.pro_list .price{
+    color:#ff841d;
+    font-size: 20px;
+}
+.pro_list em{
+    color: #ff841d;
+    font-size: 12px;
+    margin-left: 6px;
+}
+

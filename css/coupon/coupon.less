@@ -1,0 +1,134 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+a, h3 {
+    text-decoration: none;
+    color: #46494c;
+}
+
+a:hover, a:visited, a:link, a:active, a:focus {
+    text-decoration: none !important;
+}
+
+.icon-bar {
+    background: url('../../images/icon_bar.png') -98px -9px no-repeat;
+    background-size: 220px 132px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+}
+
+.header {
+    height: 44px;
+    background-color: #f4483e;
+    line-height: 44px;
+    font-family: "Microsoft YaHei", sans-serif;
+    text-align: center;
+    color: white;
+    .back, .down {
+        width: 44px;
+        height: 44px;
+        box-sizing: border-box;
+    }
+    .back {
+        color: #fff;
+        font-size: 20px;
+        line-height: 44px;
+    }
+    .down {
+        margin-right: 10px;
+        background: url('../../images/header_app.png') 5px 5px no-repeat;
+        background-size: 34px 34px;
+    }
+    h1 {
+        font-weight: bold !important;
+        display: inline-block;
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+
+.items {
+    padding: 5px 0px;
+    box-sizing: border-box;
+    li {
+        box-sizing: border-box;
+        float: left;
+        width: 33.33%;
+        height: 80px;
+        text-align: center;
+        padding: 3px;
+        .item {
+            height: 100%;
+            border:1px solid #eeeeee;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        .goodsname {
+            font-size: 12px;
+            color: #5a5a5a;
+        }
+    }
+}
+
+.crumbs {
+    padding-left: 30px;
+    height: 38px;
+    border: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    line-height: 38px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+    a {
+        color: #46494c !important;
+    }
+}
+
+.footer {
+    .user {
+        border-top: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        a {
+            float: left;
+            width: 50%;
+            text-align: center;
+            font-size: 14px;
+            color: #46494c;
+            height: 36px;
+            line-height: 36px;
+            background-color: #efefef;
+        }
+        a:nth-of-type(1) {
+            border-right: 1px solid #c4c4c4;
+        }
+    }
+    .about {
+        text-align: center;
+        height: 60px;
+        background-color: #efefef;
+        font-size: 12px;
+        div:nth-of-type(1) {
+            padding-top: 15px;
+            span:nth-of-type(1) {
+                color: red;
+            }
+        }
+        div:nth-of-type(2) {
+            line-height: 10px;
+        }
+    }
+}
+

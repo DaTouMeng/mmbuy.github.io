@@ -1,0 +1,261 @@
+/**
+ * Created by hsyoml on 2017/7/4.
+ */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../../public/css/font/iconfont.eot');
+    src: url('../../public/css/font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../../public/css/font/iconfont.woff') format('woff'),
+    url('../../public/css/font/iconfont.ttf') format('truetype'),
+    url('../../public/css/font/iconfont.svg#iconfont') format('svg');
+}
+/*第二步：定义使用iconfont的样式*/
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.layout{
+    /*height: 667px;*/
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background-color: skyblue;
+    position: fixed;
+    z-index: 1000;
+}
+header a {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+}
+header a:first-of-type{
+    left: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    line-height: 24px;
+    font-size: 20px;
+    color: #fff;
+}
+header a:last-of-type{
+    right: 5px;
+    box-sizing: border-box;
+    padding:5px;
+    background: url("../../images/header_app.png") no-repeat 0px 0px;
+    -webkit-background-size:34px 34px;
+    background-size:34px 34px;
+    background-origin: content-box;
+}
+
+header h1{
+    line-height: 44px;
+    color: #fff;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+main{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 44px 10px 0;
+}
+main .shopList {
+    width: 100%;
+    overflow: hidden;
+}
+main .shopList .nav-tabs a,
+main .shopList .nav-tabs a:hover,
+main .shopList .nav-tabs a.active{
+    border: none;
+}
+
+/*--------------------------zhuyi*/
+main .shopList .nav-tabs {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
+    float: left;
+    scroll-translation: none;
+    border-bottom:1px solid #ccc;
+}
+main .shopList .nav-tabs li{
+    position: relative;
+    display: inline-block;
+}
+
+main .shopList .nav-tabs li.active a{
+    border-bottom: 2px solid #f00;
+}
+main .shopList .nav-tabs a{
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 3px;
+    margin: 0 12px;
+}
+
+.shopList .getbaicaijiaproduct{
+    margin-top: 50px;
+}
+
+.shopList .hspane li{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-bottom:1px solid #ccc;
+    margin-bottom: 2px;
+}
+.shopList .hspane li .pic{
+    padding: 6px;
+    box-sizing: border-box;
+    width: 130px;
+    height: 100%;
+    float: left;
+}
+.shopList .hspane li img{
+    width: 100%;
+    overflow: hidden;
+}
+.shopList .hspane li .info{
+    margin-left: 130px;
+    padding: 6px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.hspane li .info .z{
+    box-sizing: border-box;
+    padding: 2px;
+
+
+}
+.hspane li .info .x{
+    margin-top: 5px;
+    font-weight: 700;
+    color:#fc353a;
+}
+
+
+.hspane li .info del{
+    text-decoration: line-through;
+
+    color: #ccc;
+}
+.hspane li .info .l,
+.hspane li .info .c{
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: 100%;
+    height:45%;
+    position: relative;
+}
+.hspane li .info .c a{
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.hspane li .info .bar{
+    height: 10%;
+}
+.hspane li .info .l .z{
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+}
+.hspane li .info .l .x{
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+}
+.hspane li .info .c a:first-of-type,
+.hspane li .info .c a:last-of-type{
+    z-index: 100;
+    position: absolute;
+    top: 5px;
+    padding: 5px;
+
+}
+.hspane li .info .c a:first-of-type{
+    display: inline-block;
+    left: 0;
+    color: #fc353a;
+    border:1px dashed #fc353a;
+}
+.hspane li .info .c a:last-of-type{
+    padding: 8px;
+    right: 0;
+    color: #fff;
+    background-color: #fc353a;
+    border-radius: 8px;
+}
+.footer .user {
+
+    border-bottom: 1px solid #c4c4c4;
+}
+.footer .user a {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    color: #46494c;
+    height: 36px;
+    line-height: 36px;
+    background-color: #efefef;
+}
+.footer .user a:nth-of-type(1) {
+    border-right: 1px solid #c4c4c4;
+}
+.footer .about {
+    text-align: center;
+    height: 60px;
+    background-color: #efefef;
+    font-size: 12px;
+}
+.footer .about div:nth-of-type(1) {
+    padding-top: 15px;
+}
+.footer .about div:nth-of-type(1) span:nth-of-type(1) {
+    color: red;
+}
+.footer .about div:nth-of-type(2) {
+    line-height: 10px;
+}
+.goTop {
+    display: none;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    background-color: #ff841d;
+    text-align: center;
+    position: fixed;
+    bottom: 0.8rem;
+    right: 0.8rem;
+    z-index: 10001;
+}
+.goTop .glyphicon-arrow-up {
+    color: #fff;
+}
+.goTop a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    text-align: center;
+}
+
+

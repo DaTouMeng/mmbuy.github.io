@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../css/cheap/cheap.css">
+</head>
+<body class="clearfix">
+<div class="layout clearfix">
+    <header>
+        <a href="../../index.html" class="iconfont">&#xf0343;</a>
+        <h1></h1>
+        <a href="#/下载app"></a>
+    </header>
+    <main>
+        <div class="shopList">
+            <ul class="nav nav-tabs sitenav" role="tablist" >
+                <!--导航-->
+            </ul>
+            <div class="tab-content getbaicaijiaproduct" >
+                <ul class="hspane">
+                    <!--模板渲染-->
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="user clearfix">
+            <a href="" class="login">登录</a>
+            <a href="" class="register">注册</a>
+        </div>
+        <div class="about">
+            <div>
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span> -- 掌上比价平台</span>
+            </div>
+            <div class="link">m.manmanmai.com</div>
+        </div>
+    </div>
+    <div class="goTop">
+        <a href="#" class="glyphicon glyphicon-arrow-up iconfont">&#xe601;</a>
+    </div>
+</div>
+<script src="../../public/assets/zepto/zepto.js"></script>
+<script src="../../public/assets/artTemplate/template.js"></script>
+<script type="text/html" id="sitenavTmp">
+    {{ each result as v i }}
+    <li role="presentation"><a href="#{{'_'+v._id}}" data-titleId="{{v.titleId}}" aria-controls="{{'_'+v._id}}" role="tab" data-toggle="tab">{{v.title}}</a></li>
+    {{ /each }}
+</script>
+<script type="text/html" id="tmpHs">
+    {{ each result as v i }}
+    <li>
+        <div class="pic">
+            {{#v.productImg}}
+        </div>
+        <div class="info">
+            <div class="l">
+                <div class="z">
+                    <h4>{{#v.productName }}</h4>
+                </div>
+                <div class="x">
+                    <h1> {{#v.productPrice }}</h1>
+                </div>
+            </div>
+            <div class="c">
+                {{#v.productCoupon }}
+                {{#v.productHref}}
+            </div>
+            {{#v.productCouponRemain}}
+        </div>
+    </li>
+    {{ /each }}
+</script>
+<script src="../../js/cheap/cheap.js"></script>
+</body>
+</html>

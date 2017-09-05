@@ -1,0 +1,50 @@
+/*导航栏面包屑*/
+.nav {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 8px;
+    border-bottom: 1px solid #b6b6b6;
+    font-size: 14px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+}
+.occupied {
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+}
+/*热门品牌排行*/
+.occupied{
+    width: 100%;
+    height: 10px;
+    background-color:#eee ;
+}
+.hot {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+.hot .rank{
+    font-size: 16px;
+    color: #874604;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc;
+    font-family: 微软雅黑;
+}
+.hot .rankLine{
+    padding: 0 10px;
+}
+.hot .fl_t a{
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    font-family: 微软雅黑;
+    border-bottom: 1px solid #ccc;
+    background: url("../../images/arrow1.gif") right center no-repeat;
+}
+

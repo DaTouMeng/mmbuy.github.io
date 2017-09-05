@@ -1,0 +1,340 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*头部*/
+.sm_header{
+    width: 100%;
+    height: 44px;
+    background-color: #ff841d;
+}
+.sm_header .row div{
+    height: 44px;
+    padding: 0;
+}
+.sm_header h1{
+    line-height: 44px;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.sm_header .sm_return{
+    width: 100%;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+}
+.sm_header .downloadApp{
+    display: block;
+    width: 50px;
+    height: 44px;
+    background: url("../../images/header_app.png") no-repeat;
+    background-size: 32px;
+    background-position: center;
+}
+
+
+/*内容*/
+.chDetail_info{
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+.chDetail_info .detail_info{
+    padding: 4px 10px;
+    background: #FFFFFF;
+}
+.chDetail_info .detail_info h3{
+    font-size: 18px;
+    margin: 10px auto 5px auto;
+    font-weight: 800;
+    text-align: left;
+    text-align-last: left;
+    word-break: break-all;
+    color: #5a5a5a;
+    line-height: normal;
+}
+.chDetail_info .detail_info h4{
+    color: #ff6c00;
+    display: block;
+    font-size: 15px;
+}
+.chDetail_info .detail_info .info{
+    margin: 12px auto;
+    color: #999999;
+    font-size: 12px;
+}
+.chDetail_info .info .mall{
+    margin: 0px 4px;
+    color: #999999;
+    vertical-align: middle;
+    display: inline-block;
+}
+.chDetail_info .info .addTime{
+    margin-right: 4px;
+    display: inline-block;
+    color: #999999;
+    vertical-align: middle;
+}
+.chDetail_info .info .author{
+    margin-right: 4px;
+    display: inline-block;
+    color: #999999;
+    vertical-align: middle;
+}
+.chDetail_info .content .picture{
+    width: 120px;
+    /*float: right;*/
+    margin: 12px auto auto 10px;
+    overflow: hidden;
+}
+.chDetail_info .picture img{
+    width: 120px;
+    height: 120px;
+    vertical-align: middle;
+}
+.chDetail_info .words{
+    font-size: 16px;
+    word-break: break-all;
+    line-height: 24px;
+    color: #606060;
+    padding-bottom: 20px;
+}
+.chDetail_info .words p{
+    line-height: 24px;
+    color: #606060;
+    word-break: break-all;
+    margin: 6px auto;
+}
+.chDetail_info .goBuy a{
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    margin: 20px 10px;
+    background: #FF9000;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+/*评论框*/
+.chDetail_info .title{
+    font-size: 16px;
+    padding: 6px 8px;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+    font-weight: 600;
+}
+.chDetail_info .reply{
+    padding: 6px 8px;
+}
+.chDetail_info .form{
+    border: 2px solid #ECEAE8;
+    border-radius: 2px;
+    padding: 4px 0 0 4px;
+    background-color: #fff;
+    position: relative;
+    width: 98%;
+    margin: 0px auto;
+}
+.chDetail_info .form textarea{
+    width: 100%;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: none;
+    line-height: 22px;
+    font-size: 14px;
+    outline: 0;
+    color: #666;
+    height: 68px;
+}
+.chDetail_info .form .control{
+    background-color: #fbfbfb;
+    height: 36px;
+    margin-left: -4px;
+    border-top: solid 1px #f2f2f2;
+}
+.chDetail_info .form .control input{
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    background: #ff841d;
+    border: 2px solid #ff841d;
+    border-left: none;
+    border-top: none;
+    padding: 0px;
+    width: 100px;
+    height: 39px;
+    color: #fff;
+    outline: 0;
+    border-radius: 0 0 2px 0;
+    font-size: 16px;
+    box-shadow: 0 0 1px #666;
+}
+
+
+/*面包屑*/
+.nav{
+    margin-top: 20px;
+    height: 36px;
+    background-color: #ebebeb;
+    border-top: solid 1px #ebebeb;
+    border-bottom: 1px solid #ccc;
+    line-height: 36px;
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+/*评论底部*/
+.footer-cu{
+    width: 100%;
+    background-color: #FCFCFC;
+    color: #666;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 44px;
+    font-size: 10px;
+    display: table;
+    z-index: 999;
+}
+.footer-cu .footer-comment {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    height: 44px;
+}
+.footer-cu .footer-comment a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.footer-cu .footer-comment .ico-comment{
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.footer-cu .footer-btn{
+    display: table-cell;
+    width: 70%;
+    vertical-align: middle;
+}
+.footer-cu .footer-btn ul{
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+.footer-cu .footer-btn ul li{
+    width: 100%;
+    display: table-cell;
+    box-sizing: border-box;
+    padding: 0px;
+    float: right;
+}
+.footer-cu .footer-btn ul .c{
+    height: 44px;
+    border-radius: 0px;
+    line-height: 44px;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    background: #FF9000;
+}
+.footer-cu .footer-btn .c a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.footer-cu .footer-btn .ico-buy{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+}
+.footer-cu .footer-btn .c .tit{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-left: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/*底部*/
+.footer {
+    height: 96px;
+    padding-top: 10px;
+}
+.footer a,
+.footer a:active
+{
+    color: #5a5a5a;
+    text-decoration: none;
+}
+.footer .footTop a {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+    color: #5a5a5a;
+}
+.footer .footTop{
+    border: 1px solid #c4c4c4;
+    border-left: 0;
+    border-right: 0;
+}
+.footer .footTop .one{
+    width: 28%;
+    border-right: 1px solid #c4c4c4;
+}
+.footer .footTop .toTop{
+    width: 40%;
+    text-align: center;
+}
+.footer .toTop span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url('../../upload/index/top.jpg');
+    background-size: 100%;
+}
+.footBottom {
+    width: 100%;
+    height: 60px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.footBottom a {
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+}
+.footBottom .appDown {
+    color: #FF0000;
+}
+.footBottom p {
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    margin: 0;
+}
+
+

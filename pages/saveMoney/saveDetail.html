@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../css/saveMoney/saveDetail.css">
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">
+</head>
+<body>
+<!--头部-->
+<div class="container sm_header">
+    <div class="row">
+        <div class="col-xs-2"><a href="javascript:history.go(-1);" class="sm_return glyphicon glyphicon-chevron-left"></a></div>
+        <div class="col-xs-8"><h1>省钱控-折扣</h1></div>
+        <div class="col-xs-2"><a href="javascript:;" class="downloadApp"></a></div>
+    </div>
+</div>
+
+<!--内容部分-->
+<div class="chDetail_info">
+    <div class="container" id="detail">
+
+            <!--info-->
+
+    </div>
+    <div class="footer-cu">
+        <div class="footer-comment">
+            <a href="javascript:;"></a>
+            <div class="glyphicon glyphicon-edit ico-comment">
+                <div class="tit">评论</div>
+            </div>
+        </div>
+        <div class="footer-btn">
+            <ul>
+                <li>
+                    <div class="c">
+                        <a href="javascript:;"></a>
+                        <div class="glyphicon glyphicon-shopping-cart ico-buy"></div>
+                        <div class="tit">前往购买</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--面包屑-->
+<div class="nav">
+
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footTop">
+        <a href="javascript:void(0);" class="one login">登录</a>
+        <a href="javascript:void(0);" class="one register">注册</a>
+        <a href="#" class="toTop"><span></span> 返回顶部
+        </a>
+    </div>
+    <div class="footBottom">
+        <a href="javascript:void(0);" class="appDown">手机app下载</a>
+        <a href="javascript:void(0);" class="mobile">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.com</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../../public/assets/jquery/jquery.js"></script>
+    <script src="../../public/assets/bootstrap/js/bootstrap.js"></script>
+    <script src="../../public/assets/artTemplate/template.js"></script>
+    <script src="../../js/saveMoney/saveDetail.js"></script>
+
+<script type="text/template" id="detailTemp">
+<div class="detail_info">
+    <h3>{{result[0].productName}}</h3>
+    <h4>{{result[0].productPrice}}</h4>
+    <div class="info">
+        <span class="mall">{{result[0].productFrom}}</span>
+        <span class="addTime">{{result[0].productTime}}</span>
+    <span class="author">{{result[0].productTips}}</span>
+        </div>
+        <div class="content">
+        <div class="picture">
+        {{#result[0].productImgSm}}
+        </div>
+        <div class="words">
+        <p>{{result[0].productInfo}}</p>
+    </div>
+    </div>
+    <div class="detailCity">{{#result[0].productCity}}</div>
+    <div class="goBuy">
+        <a href="javascript:;">
+        <i class="glyphicon glyphicon-shopping-cart"></i>
+        前往购买
+        </a>
+    </div>
+</div>
+<div class="comment">{{#result[0].productComment}}</div>
+</script>
+</body>
+</html>

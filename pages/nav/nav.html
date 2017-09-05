@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../css/nav/nav.css">
+</head>
+<body>
+<div class="layout">
+    <header>
+        <a href="../../index.html" class="iconfont">&#xf0343;</a>
+        <h1>商城导航</h1>
+        <a href="#/下载app"></a>
+    </header>
+    <div class="main">
+          <div id="navList" class="clearfix">
+          </div>
+    </div>
+    <div class="footer">
+        <div class="footTop">
+            <a href="javascript:void(0);" class="one login">登录</a>
+            <a href="javascript:void(0);" class="one register">注册</a>
+            <a href="#" class="toTop"><span></span> 返回顶部
+            </a>
+        </div>
+        <div class="footBottom">
+            <a href="javascript:void(0);" class="appDown">手机app下载</a>
+            <a href="javascript:void(0);" class="mobile">慢慢买手机版</a>
+            -- 掌上比价平台
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+
+</div>
+<script src="../../public/assets/zepto/zepto.js"></script>
+<script src="../../public/assets/artTemplate/template.js"></script>
+
+<script type="text/html" id="navListTmp">
+  {{ each result as v i }}
+    <div class="navlist" data-id="{{ v._id }}" data-navId="{{ result.Id }}">
+        <a class="wz" href="{{ v.navHref }}">
+            <img src="{{v.navImg}}" alt="">
+            <span>{{v.navTitle}}</span>
+        </a>
+    </div>
+    {{/each}}
+</script>
+<script src="../../js/nav/nav.js">
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>海淘折扣-慢慢买</title>
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../css/oversea/oversea.css">
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <a href="javascript:history.go(-1)" class=" back fl glyphicon glyphicon-menu-left"></a>
+        <h1>海淘折扣</h1>
+        <a href="" class="icon-bar down fr"></a>
+    </div>
+    <div class="items">
+        <ul>
+            <script type="test/template" id="goods">
+                <%for(var i=0;i < result.length ;i++){%>
+                <li class="clearfix">
+                    <a href="../saveMoney/saveDetail.html?id=<%=#result[i].productId%>">
+                        <div class="goods">
+                            <%=#result[i].productImgSm%>
+                        </div>
+                        <h3><%=result[i].productName%><span class="price"><%=result[i].productPinkage%><span></h3>
+                        <div class="other">
+                            <div class="fl"><%=result[i].productFrom%> | <%=result[i].productTime%></div>
+                            <div class="comment fr">
+                                <span class="glyphicon glyphicon-comment"></span>
+                                <span><%=parseInt(result[i].productComCount)%></span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <% }%>
+            </script>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="user clearfix">
+            <a href="" class="login">登录</a>
+            <a href="" class="register">注册</a>
+        </div>
+        <div class="about">
+            <div>
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span> -- 掌上比价平台</span>
+            </div>
+            <div class="link">m.manmanmai.com</div>
+        </div>
+    </div>
+    <div class="goTop">
+        <span class="glyphicon glyphicon-arrow-up"></span>
+    </div>
+</div>
+<script src="../../public/assets/jquery/jquery.min.js"></script>
+<script src="../../public/assets/artTemplate/template-native.js"></script>
+<script src="../../public/assets/pullmaster/pull.min.js"></script>
+<script src="../../js/oversea/oversea.js"></script>
+</body>
+</html>

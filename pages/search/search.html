@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>产品分类</title>
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../css/search/common.css">
+    <link rel="stylesheet" href="../../css/search/listMenu.css">
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <a class="logo" href="javascript:void(0);">
+        <h1>慢慢买 -- 最专业的比价平台</h1>
+    </a>
+    <a class="download" href="javascript:void(0);">
+    </a>
+</div>
+<!--搜索框 -->
+<div class="search">
+    <form action="" class="type">
+        <input type="search" placeholder="请输入你想比价的商品"/>
+        <button class="toSearch">搜索</button>
+    </form>
+</div>
+<div class="listMenuBox">
+    <!--动态渲染-->
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footTop">
+        <a href="javascript:void(0);" class="one login">登录</a>
+        <a href="javascript:void(0);" class="one register">注册</a>
+        <a href="#" class="toTop"><span></span> 返回顶部
+        </a>
+    </div>
+    <div class="footBottom">
+        <a href="javascript:void(0);" class="appDown">手机app下载</a>
+        <a href="javascript:void(0);" class="mobile">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.com</p>
+    </div>
+</div>
+<script type="text/template" id="listItem">
+    {{each result as value index}}
+    <button class="listItem" type="button" data-toggle="collapse" data-target="#bigElectric{{value.titleId}}" data-title-id="{{value.titleId}}">{{value.title}}<b
+            class="glyphicon glyphicon-menu-down pull-right"></b></button>
+    <div class="collapse" id="bigElectric{{value.titleId}}">
+        <div class="well listItem_list">
+            <ul class="clearfix ul{{value.titleId}}">
+                <!--动态渲染-->
+            </ul>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script type="text/template" id="listItem_list">
+    {{each result as value index}}
+    <li class="col-xs-4"><a href="productList.html?categoryid={{value.categoryId}}&category={{value.category}}" data-category-id="{{value.categoryId}}">{{value.category}}</a></li>
+    {{/each}}
+</script>
+<script src="../../public/assets/jquery/jquery.js"></script>
+<script>jQuery.noConflict()</script>
+<script src="../../public/assets/zepto/zepto.js"></script>
+<script src="../../public/assets/artTemplate/template.js"></script>
+<script src="../../public/assets/bootstrap/js/bootstrap.js"></script>
+<script src="../../js/search/listMenu.js"></script>
+</body>
+</html>

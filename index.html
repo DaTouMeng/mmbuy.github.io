@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv=”X-UA-Compatible” content=”IE=edge”>
+    <title>慢慢买比价网--手机版</title>
+    <link rel="stylesheet" href="./public/css/base.css"/>
+    <link rel="stylesheet" href="./public/assets/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/index/index.css"/>
+
+</head>
+<body>
+<div class="layout">
+    <!--头部-->
+    <div class="header">
+        <a class="logo" href="javascript:void(0);">
+            <h1>慢慢买 -- 最专业的比价平台</h1>
+        </a>
+        <a class="download" href="javascript:void(0);">
+        </a>
+    </div>
+    <!--搜索框 -->
+    <div class="search">
+        <form action="" class="type">
+            <input type="search" placeholder="请输入你想比价的商品"/>
+            <button class="toSearch">搜索</button>
+        </form>
+
+    </div>
+    <!--菜单栏-->
+    <div class="menu"></div>
+    <!--超值折扣推荐-->
+    <div class="bigDiscount">
+        <div class="disHeader">
+            <span class="disText">超值折扣推荐</span>
+            <a href="./pages/saveMoney/saveMoney.html" class="disMore"></a>
+        </div>
+        <div class="disList">
+            <ul class="disItems">
+
+            </ul>
+        </div>
+    </div>
+    <div class="moreDiscount">
+        <a href="./pages/saveMoney/saveMoney.html">更多优惠信息 »</a>
+    </div>
+    <div class="brandRank">
+        <a href="javascript:void(0);">品牌排行</a>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <div class="footTop">
+            <a href="javascript:void(0);" class="one login">登录</a>
+            <a href="javascript:void(0);" class="one register">注册</a>
+            <a href="#" class="toTop"><span></span> 返回顶部
+            </a>
+        </div>
+        <div class="footBottom">
+            <a href="javascript:void(0);" class="appDown">手机app下载</a>
+            <a href="javascript:void(0);" class="mobile">慢慢买手机版</a>
+            -- 掌上比价平台
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+<script type = "text/template" id = "menuList">
+    <div class="container">
+        <div class="row menuHide clearfix">
+            {{each result as v i}}
+            <div data-href="{{v.titlehref}}" data-itemid="{{v.indexmenuId}}" class="itemMenu col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            {{#v.img}}
+            <div class="itemName">{{v.name}}</div>
+        </div>
+            {{/each}}
+        </div>
+    </div>
+</script>
+<script type="text/template" id="itemList">
+
+    <li>
+        <a href="pages/saveMoney/saveDetail.html?id={{productId}}" class="disItem clearfix">
+            <div class="itemImg">
+                {{#productImgSm}}
+            </div>
+            <div class="disIntro clearfix">
+                <div class="itemTitle">
+                    {{productName}}
+                    <span>{{productPinkage}}</span>
+                </div>
+                <div class="other">
+                    <div class="from">{{productFrom}} | {{productTime}}</div>
+                    <div class="comment">
+                        {{productComCount}}
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+
+</script>
+<script src="./public/assets/jquery/jquery.min.js"></script>
+<script src="./public/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="./public/assets/artTemplate/template-debug.js"></script>
+<script src="./js/index/index.js"></script>
+</body>
+</html>

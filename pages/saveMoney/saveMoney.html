@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/saveMoney/saveMoney.css">
+
+
+</head>
+<body>
+<!--头部-->
+<div class="container sm_header">
+    <div class="row">
+        <div class="col-xs-2"><a href="javascript:history.go(-1);" class="sm_return glyphicon glyphicon-chevron-left"></a></div>
+        <div class="col-xs-8"><h1>省钱控-最新优惠</h1></div>
+        <div class="col-xs-2"><a href="javascript:;" class="downloadApp"></a></div>
+    </div>
+</div>
+<!--商品部分-->
+<div class="sm_middle" id="goods_info">
+        <!--info-->
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="footTop">
+        <a href="javascript:void(0);" class="one login">登录</a>
+        <a href="javascript:void(0);" class="one register">注册</a>
+        <a href="#" class="toTop"><span></span> 返回顶部
+        </a>
+    </div>
+    <div class="footBottom">
+        <a href="javascript:void(0);" class="appDown">手机app下载</a>
+        <a href="javascript:void(0);" class="mobile">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.com</p>
+    </div>
+</div>
+
+    <script src="../../public/assets/jquery/jquery.js"></script>
+    <script src="../../public/assets/bootstrap/js/bootstrap.js"></script>
+    <script src="../../public/assets/artTemplate/template.js"></script>
+    <script src="../../js/saveMoney/saveMoney.js"></script>
+<script type="text/template" id="goodsInfo">
+<div>
+    <ul>
+        {{each result as v i}}
+        <li class="clearfix">
+            <a href="saveDetail.html?id={{v.productId}}" class="clearfix">
+                <div class="picture">{{#v.productImgSm}}</div>
+                <div class="goods">
+                    <div class="goodsTitle">
+                        {{v.productName}}
+                        <span>{{v.productPinkage}}</span>
+                    </div>
+                    <div class="goodsOther">
+                        <span>{{v.productFrom}} | {{v.productTime}}</span>
+                        <span><i class="glyphicon glyphicon-comment ico-comment"></i>
+                        {{v.productComCount.slice(1).replace('人评论','')}}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<div id="goods_button">
+    <div class="row" data-id="{{result.productId ? result.productId : 1}}">
+        <div class="col-xs-4 select_button"><button value="上一页" class="btn_advance" data-max-page="{{maxPage}}">上一页</button></div>
+        <div class="col-xs-4 select_button">
+            <select name="select" id="">
+                <option value="{{page}}/{{maxPage}}">{{page}}/{{maxPage}}</option>
+            </select>
+        </div>
+        <div class="col-xs-4 select_button"><button value="下一页" class="btn_return" data-max-page="{{maxPage}}">下一页</button></div>
+    </div>
+</div>
+</script>
+</body>
+</html>

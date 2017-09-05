@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>热门排行榜</title>
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../css/brand/common/common.css">
+    <link rel="stylesheet" href="../../css/brand/hotBrand.css">
+    <link rel="stylesheet" href="../../css/brand/common/gotop/css/97zzw.css">
+    <script src="../../public/assets/jquery/jquery.js"></script>
+    <script src="../../css/brand/common/gotop/js/97zzw.js"></script>
+
+
+</head>
+<body>
+<!--头部-->
+<div class="header1 clearfix1">
+    <div class="fl logo">
+        <a href="javascript:;" title="慢慢买比价网--手机版">
+            <img src="../../images/header_logo.png" alt="慢慢买比价网--手机版"></a></div>
+    <div class="fr appdown">
+        <a href="javascript:;"  title="手机app下载">
+            <img src="../../images/header_app.png" alt="手机app下载" class='fr'></a></div>
+</div>
+<!--搜索栏-->
+<form action="">
+    <div class='brandBox'>
+    <div class='brandTxt'>
+        <input type="text" placeholder="请输入你想比价的商品">
+    </div>
+    <div class='brandBtn fr'>
+        <input type="submit" value="搜索">
+    </div>
+</div>
+</form>
+<!--导航面包屑-->
+
+<!--热门品牌排行-->
+<div class='hot'>
+    <div class="nav">
+        <a href="javascript:;" class="home">首页</a> &gt; <a href="javascript:;" class="brand">品牌大全</a>
+    </div>
+    <!--占位-->
+    <div class="occupied"></div>
+    <div class="rank">热门品牌排行</div>
+    <div ng-view='' class='rankLine' id='rankLine' >
+        <!--<div class="fl_t"><a href="#">平板电视十大品牌</a></div>-->
+    </div>
+</div>
+<!--底部-->
+<footer>
+    <i class="occupied2"></i>
+    <nav>
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href="javascript:;">
+            <img src="../../images/top.jpg" alt="">
+            返回头部</a>
+    </nav>
+    <p>
+        <a href="javascript:;">手机APP下载</a>&nbsp;
+        <a href="javascript:;">慢慢买手机版</a>&nbsp;
+        --掌上比价平台
+    </p>
+    <p>m.manmanbuy.com</p>
+
+</footer>
+<script src="../../public/assets/artTemplate/template.js"></script>
+<script src="../../js/brand/brand.js"></script>
+<script type=text/template id='hotTemp'>
+    {{ each result as v i }}
+    <div class="fl_t" >
+        <a href="Top10.html?id={{v.brandTitleId}}" >{{v.brandTitle}}</a>
+    </div>
+    {{/each}}
+</script>
+<script>
+    function pageScroll() {
+        window.scrollBy(0,-10);
+        scrolldelay=setTimeout('pageScroll()',100);
+    }
+</script>
+<script>
+    $(function (){
+        $(window).toTop({
+            showHeight : 100,//设置滚动高度时显示
+            speed : 300 //返回顶部的速度以毫秒为单位
+        });
+    });
+</script>
+</body>
+</html>

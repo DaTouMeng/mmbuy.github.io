@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../css/china/china.css">
+</head>
+<body>
+<!--头部-->
+<div class="container sm_header">
+    <div class="row">
+        <div class="col-xs-2"><a href="javascript:history.go(-1);" class="sm_return glyphicon glyphicon-chevron-left"></a></div>
+        <div class="col-xs-8"><h1>国内折扣</h1></div>
+        <div class="col-xs-2"><a href="javascript:;" class="downloadApp"></a></div>
+    </div>
+</div>
+
+<!--商品详情-->
+<div class="ch_goods clearfix" id="ch_goods">
+    <!--info-->
+</div>
+
+<!--底部-->
+<div class="footer">
+    <div class="footTop">
+        <a href="javascript:void(0);" class="one login">登录</a>
+        <a href="javascript:void(0);" class="one register">注册</a>
+        <a href="#" class="toTop"><span></span> 返回顶部
+        </a>
+    </div>
+    <div class="footBottom">
+        <a href="javascript:void(0);" class="appDown">手机app下载</a>
+        <a href="javascript:void(0);" class="mobile">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.com</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="../../public/assets/jquery/jquery.js"></script>
+<script src="../../public/assets/bootstrap/js/bootstrap.js"></script>
+<script src="../../public/assets/artTemplate/template.js"></script>
+<script src="../../js/china/china.js"></script>
+<script type="text/template" id="ch_temp">
+    <div class="details">
+        <a href="./chinaDetail.html?id={{productId}}">
+            <div>{{#productImg}}</div>
+            <div>
+                <div class="title">{{productName}}</div>
+                <div class="money">{{productPrice}}</div>
+                <div class="info"><div class="mall">{{productFrom}} | {{productTime}}</div></div>
+            </div>
+        </a>
+    </div>
+</script>
+</body>
+</html>

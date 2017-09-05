@@ -1,0 +1,163 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*头部*/
+.sm_header{
+    width: 100%;
+    height: 44px;
+    background-color: #ff841d;
+}
+.sm_header .row div{
+    height: 44px;
+    padding: 0;
+}
+.sm_header h1{
+    line-height: 44px;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.sm_header .sm_return{
+    width: 100%;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+}
+.sm_header .downloadApp{
+    display: block;
+    width: 50px;
+    height: 44px;
+    background: url("../../images/header_app.png") no-repeat;
+    background-size: 32px;
+    background-position: center;
+}
+
+/*商品详情*/
+.ch_goods .details{
+    float: left;
+    display: table-cell;
+    padding: 10px 0 0 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    background: #FFFFFF;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    border-top-width: 0;
+    overflow: hidden;
+}
+.ch_goods .details img{
+    margin: 10px auto;
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
+}
+.ch_goods .details .title{
+    color: #333333;
+    padding: 0 8px;
+    font-size: 14px;
+    text-align: left;
+    text-align-last: left;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+.ch_goods .details .money{
+    color: #ff6c00;
+    margin-top: 4px;
+    font-size: 14px;
+    padding: 0 8px;
+    text-align: left;
+    text-align-last: left;
+    overflow: hidden;
+    height: 18px;
+    line-height: 18px;
+}
+.ch_goods .details .info{
+    padding: 6px 8px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.ch_goods .details .info .mall{
+    color: #a1a1a1;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+/*底部*/
+.footer {
+    height: 96px;
+    padding-top: 10px;
+}
+.footer a,
+.footer a:active
+{
+    color: #5a5a5a;
+    text-decoration: none;
+}
+.footer .footTop a {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+    color: #5a5a5a;
+}
+.footer .footTop{
+    border: 1px solid #c4c4c4;
+    border-left: 0;
+    border-right: 0;
+}
+.footer .footTop .one{
+    width: 28%;
+    border-right: 1px solid #c4c4c4;
+}
+.footer .footTop .toTop{
+    width: 40%;
+    text-align: center;
+}
+.footer .toTop span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url('../../upload/index/top.jpg');
+    background-size: 100%;
+}
+.footBottom {
+    width: 100%;
+    height: 60px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.footBottom a {
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+}
+.footBottom .appDown {
+    color: #FF0000;
+}
+.footBottom p {
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+
+
+
+

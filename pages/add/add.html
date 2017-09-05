@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>凑单品</title>
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../css/add/add.css">
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a href="javascript:history.go(-1)" class="pull-left glyphicon glyphicon-menu-left" aria-hidden="true"></a>
+        <div class="center-block">凑单品</div>
+    </div>
+</nav>
+
+<div class="tab" role="tabpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs bread_tool row" role="tablist">
+        <li id="sec1" role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">京东</a></li>
+        <li id="sec2" role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab" >华北</a></li>
+        <li id="sec3" role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab" >全部价格</a></li>
+    </ul>
+    <!--<span class="search glyphicon glyphicon-search"></span>-->
+    <!-- Tab panes -->
+
+    <div class="tab-content tabs">
+
+        <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="Section2">
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="Section3">
+            <a href="#" class="list-group-item">全部价格</a>
+            <a href="#" class="list-group-item">1元</a>
+            <a href="#" class="list-group-item">1-3元</a>
+            <a href="#" class="list-group-item">3-5元</a>
+            <a href="#" class="list-group-item">10-15元</a>
+            <a href="#" class="list-group-item">15元以上</a>
+        </div>
+    </div>
+</div>
+
+<!--商品列表-->
+<div class="pro_list">
+
+</div>
+
+<script type="text/template" id="content1">
+    {{each result as v i}}
+    <a href="#" class="list-group-item" onclick="getgsshop({{v.shopId}},this)">{{v.shopName}}</a>
+    {{/each}}
+</script>
+
+<script type="text/template" id="content2">
+    {{each result as v i}}
+    <a href="#" class="list-group-item" onclick="getgsarea({{v.areaId}},this)">{{v.areaName}}</a>
+    {{/each}}
+</script>
+
+
+
+<script type="text/template" id="pro_tpl">
+    {{each result as v i}}
+    <div class="item">
+        <a href="#">
+            <div class="pic">
+                <img class="lazy" src={{v.productImg}} data-original={{v.productImg}} alt="" width="100%" height="100%">
+            </div>
+            <p class="title">
+                {{v.productName}}
+            </p>
+            <p class="price"><em>￥</em>{{v.productPrice.substr(1)}}</p>
+        </a>
+    </div>
+    {{/each}}
+
+</script>
+
+<script src="../../public/assets/jquery/jquery.min.js"></script>
+<script src="../../public/assets/bootstrap/js/bootstrap.js"></script>
+<script src="../../public/assets/zepto/zepto.js"></script>
+<script src="../../public/assets/artTemplate/template.js"></script>
+<script src="../../public/assets/jquery-lazyload/jquery.lazyload.js"></script>
+<script src="../../public/assets/jquery-lazyload/jquery.scrollstop.js"></script>
+<script src="../../public/assets/jquery-masonry/masonry.pkgd.min.js"></script>
+<script src="../../js/add/add.js"></script>
+</body>
+</html>

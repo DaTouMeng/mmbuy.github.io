@@ -1,0 +1,159 @@
+body {
+    background-color: #f2f2f2;
+}
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: #ff841d;
+}
+.header .logo {
+    float: left;
+    width: 75%;
+    height: 25px;
+    margin-left: 17px;
+    margin-top: 12px;
+    background: url("../../images/header_logo.png") no-repeat;
+    background-size: auto 100%;
+    overflow: hidden;
+}
+.header .logo h1 {
+    margin-left: -1000em;
+}
+.header .download {
+    float: right;
+    width: 34px;
+    height: 34px;
+    margin-right: 7px;
+    margin-top: 7px;
+    background: url("../../images/header_app.png") no-repeat;
+    background-size: 100%;
+}
+.search {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+.search input {
+    border: none;
+}
+.type{
+    position: relative;
+    width: 90%;
+    /*padding-left: 5%;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.type input {
+    position: absolute;
+    left: 5%;
+    top: 10px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+.type .toSearch {
+    position: absolute;
+    right: -5%;
+    top: 10px;
+    width: 63px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #ff841d;
+    color: #fff;
+    border-style: none;
+}
+nav ul {
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    padding-left:10px;
+}
+nav ul > a {
+    float: right;
+    margin-right: 15px;
+    margin-top: 7px;
+    height: 26px;
+    width: 50px;
+    border-radius: 10px;
+    text-align: center;
+    line-height:25px;
+    background-color: #ccc;
+}
+nav li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+nav li a {
+    font-weight:700;
+}
+/* 脚部 */
+.footer {
+    height: 96px;
+    padding-top: 10px;
+}
+.footer a,
+.footer a:active
+{
+    color: #5a5a5a;
+    text-decoration: none;
+}
+.footer .footTop a {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+    color: #5a5a5a;
+}
+.footer .footTop{
+    border: 1px solid #c4c4c4;
+    border-left: 0;
+    border-right: 0;
+}
+.footer .footTop .one{
+    width: 28%;
+    border-right: 1px solid #c4c4c4;
+}
+.footer .footTop .toTop{
+    width: 40%;
+    text-align: center;
+}
+.footer .toTop span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url('../../upload/index/top.jpg');
+    background-size: 100%;
+}
+.footBottom {
+    width: 100%;
+    height: 60px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.footBottom a {
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+}
+.footBottom .appDown {
+    color: #FF0000;
+}
+.footBottom p {
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    margin: 0;
+}

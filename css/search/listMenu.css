@@ -1,0 +1,51 @@
+body {
+    background-color: #f2f2f2;
+}
+.listMenuBox {
+    margin: 5px 5px 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.listItem {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    font: 700 16px "microsoft-yahei";
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #ebebeb;
+    text-align: left;
+}
+.listItem:focus {
+    outline: none;
+}
+.listItem_list {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    padding: 0;
+    border: none;
+    min-height: 0;
+    border-bottom: 2px solid #999;
+}
+.listItem_list ul {
+    background-color: #fff;
+}
+.listItem_list li {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.listItem_list li:nth-of-type(3n) {
+    border-right: none;
+}
+.listItem_list li a {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+}
